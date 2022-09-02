@@ -5,10 +5,10 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using integrate_dotnet_core_create_react_app.Data;
-using integrate_dotnet_core_create_react_app.Models;
+using red_tech_appv2.Data;
+using red_tech_appv2.Models;
 
-namespace integrate_dotnet_core_create_react_app.Controllers
+namespace red_tech_appv2.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -25,10 +25,10 @@ namespace integrate_dotnet_core_create_react_app.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Order>>> GetOrders()
         {
-          if (_context.Orders == null)
-          {
-              return NotFound();
-          }
+            if (_context.Orders == null)
+            {
+                return NotFound();
+            }
             return await _context.Orders.ToListAsync();
         }
 
@@ -36,11 +36,29 @@ namespace integrate_dotnet_core_create_react_app.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<Order>> GetOrder(int id)
         {
-          if (_context.Orders == null)
-          {
-              return NotFound();
-          }
+            if (_context.Orders == null)
+            {
+                return NotFound();
+            }
             var order = await _context.Orders.FindAsync(id);
+
+            if (order == null)
+            {
+                return NotFound();
+            }
+
+            return order;
+        }
+
+        // GET: api/Orders/type
+        [HttpGet("{type}")]
+        public async Task<ActionResult<Order>> GetOrderByType(int type)
+        {
+            if (_context.Orders == null)
+            {
+                return NotFound();
+            }
+            var order = await _context.Orders.FindAsync(type);
 
             if (order == null)
             {
@@ -86,10 +104,10 @@ namespace integrate_dotnet_core_create_react_app.Controllers
         [HttpPost]
         public async Task<ActionResult<Order>> PostOrder(Order order)
         {
-          if (_context.Orders == null)
-          {
-              return Problem("Entity set 'MyDbContext.Orders'  is null.");
-          }
+            if (_context.Orders == null)
+            {
+                return Problem("Entity set 'MyDbContext.Orders'  is null.");
+            }
             _context.Orders.Add(order);
             await _context.SaveChangesAsync();
 
@@ -100,18 +118,24 @@ namespace integrate_dotnet_core_create_react_app.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteOrder(int id)
         {
+            Console.WriteLine(id);
             if (_context.Orders == null)
             {
                 return NotFound();
             }
-            var order = await _context.Orders.FindAsync(id);
-            if (order == null)
-            {
-                return NotFound();
-            }
+            // for (int i = 0; i < ids.Count; i++)
+            // {
+            //     Console.WriteLine(ids[i]);
+            //     var order = await _context.Orders.FindAsync(ids[i]);
+            //     Console.WriteLine(order);
+            //     if (order == null)
+            //     {
+            //         return NotFound();
+            //     }
 
-            _context.Orders.Remove(order);
+            //     _context.Orders.Remove(order);
             await _context.SaveChangesAsync();
+            // }
 
             return NoContent();
         }

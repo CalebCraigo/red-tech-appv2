@@ -5,11 +5,11 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
-using integrate_dotnet_core_create_react_app.Data;
+using red_tech_appv2.Data;
 
 #nullable disable
 
-namespace integrate_dotnet_core_create_react_app.Migrations
+namespace red_tech_appv2.Migrations
 {
     [DbContext(typeof(MyDbContext))]
     [Migration("20220831225231_InitialCreate")]
@@ -24,7 +24,7 @@ namespace integrate_dotnet_core_create_react_app.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
-            modelBuilder.Entity("integrate_dotnet_core_create_react_app.Models.Order", b =>
+            modelBuilder.Entity("red_tech_appv2.Models.Order", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()

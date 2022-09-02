@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace integrate_dotnet_core_create_react_app.Models
+namespace red_tech_appv2.Models
 {
     public class Order
     {

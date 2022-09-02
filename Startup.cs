@@ -8,9 +8,9 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Npgsql.EntityFrameworkCore.PostgreSQL;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Design;
-using integrate_dotnet_core_create_react_app.Data;
+using red_tech_appv2.Data;
 
-namespace integrate_dotnet_core_create_react_app
+namespace red_tech_appv2
 {
     public class Startup
     {

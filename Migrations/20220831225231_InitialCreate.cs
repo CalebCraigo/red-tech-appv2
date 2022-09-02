@@ -4,7 +4,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 #nullable disable
 
-namespace integrate_dotnet_core_create_react_app.Migrations
+namespace red_tech_appv2.Migrations
 {
     public partial class InitialCreate : Migration
     {

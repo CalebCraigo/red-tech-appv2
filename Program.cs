@@ -7,7 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace integrate_dotnet_core_create_react_app
+namespace red_tech_appv2
 {
     public class Program
     {
