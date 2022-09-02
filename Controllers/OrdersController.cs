@@ -114,6 +114,7 @@ namespace red_tech_appv2.Controllers
             return CreatedAtAction("GetOrder", new { id = order.Id }, order);
         }
 
+        // Needs to be refactored to take multiple id's for deletion at once
         // DELETE: api/Orders/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteOrder(int id)
@@ -126,14 +127,14 @@ namespace red_tech_appv2.Controllers
             // for (int i = 0; i < ids.Count; i++)
             // {
             //     Console.WriteLine(ids[i]);
-            //     var order = await _context.Orders.FindAsync(ids[i]);
+            var order = await _context.Orders.FindAsync(id);
             //     Console.WriteLine(order);
-            //     if (order == null)
-            //     {
-            //         return NotFound();
-            //     }
+            if (order == null)
+            {
+                return NotFound();
+            }
 
-            //     _context.Orders.Remove(order);
+            _context.Orders.Remove(order);
             await _context.SaveChangesAsync();
             // }
 

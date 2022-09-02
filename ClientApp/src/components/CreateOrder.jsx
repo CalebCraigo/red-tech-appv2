@@ -76,9 +76,9 @@ const CreateOrder = (props) => {
         let newOrder = {}
         newOrder = {
             //UserName hardcode until OAuth connected
-            createdByUserName: 'Caleb',
+            createdByUsername: 'Caleb',
             customerName: customerName,
-            orderType: type,
+            type: type,
             createdDate: date,
         }
         postOrder(newOrder, props.setData)

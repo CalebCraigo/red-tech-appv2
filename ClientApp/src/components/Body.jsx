@@ -100,10 +100,11 @@ const Body = (props) => {
     }
 
     async function handleDelete() {
-        await deleteOrder(listSelection)
+        console.log('listselction', typeof listSelection[0]);
+        await deleteOrder(listSelection[0])
         let newArr = [...listData];
         listData.forEach(item => {
-            if(listSelection.indexOf(item.orderId) !== -1){
+            if(listSelection.indexOf(item.id) !== -1){
                 newArr.splice(newArr.indexOf(item), 1);
             }
         })

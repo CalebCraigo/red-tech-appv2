@@ -44,7 +44,7 @@ const Table = (props) => {
     }else{
         columns = [
         { 
-            field: 'orderId', 
+            field: 'id', 
             headerName: 'Order Id',
             sortable: true,
             flex: 1.5
@@ -56,13 +56,13 @@ const Table = (props) => {
             flex: 1
         },
         { 
-            field: 'createdByUserName', 
+            field: 'createdByUsername', 
             headerName: 'Created By', 
             sortable: true,
             flex: .5
         },
         {
-            field: 'orderType',
+            field: 'type',
             headerName: 'Order Type',
             sortable: true,
             flex: 1
@@ -84,7 +84,7 @@ const Table = (props) => {
         <ThemeProvider theme={props.theme}>
             <div style={{ height: '900px', width: '100%' }}>
                 <DataGrid
-                    getRowId={(data) => data.orderId}
+                    getRowId={(data) => data.id}
                     rows={data}
                     columns={columns}
                     checkboxSelection
