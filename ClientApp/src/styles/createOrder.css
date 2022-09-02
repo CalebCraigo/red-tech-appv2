@@ -1,0 +1,23 @@
+.createButton{
+    background-color: #3872b4 !important;
+}
+
+.cancelButton{
+    background-color: #3872b4 !important;
+}
+
+.orderTypeMenu {
+    padding: 8px !important;
+}
+
+.orderTypeLabel {
+    position: relative;
+}
+
+.chipOuterBox {
+    height: 23px;
+}
+
+.valueChip {
+    height: 23px !important;
+}

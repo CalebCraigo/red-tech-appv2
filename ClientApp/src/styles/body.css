@@ -1,0 +1,35 @@
+.searchForm{
+    display: inline-block;
+    padding: 8px;
+}
+
+.createOrderButton{
+    margin: 10px !important;
+    background-color: #3872b4 !important;
+}
+
+.deleteSelectedButton{
+    margin: 15px !important;
+    background-color: #3872b4 !important;
+}
+
+.orderTypeForm{
+    min-width: 270px !important;
+    width: fit-content !important;
+}
+
+.orderTypeMenu{
+    padding: 8px !important;
+}
+
+.orderTypeLabel{
+    position: relative;
+}
+
+.chipOuterBox{
+    height: 23px;
+}
+
+.valueChip {
+    height: 23px !important;
+}
