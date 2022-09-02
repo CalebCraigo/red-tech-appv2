@@ -100,7 +100,6 @@ const Body = (props) => {
     }
 
     async function handleDelete() {
-        console.log('listselction', typeof listSelection[0]);
         await deleteOrder(listSelection[0])
         let newArr = [...listData];
         listData.forEach(item => {
