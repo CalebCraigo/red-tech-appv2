@@ -61,6 +61,21 @@ const Main = () => {
 
             )
             },
+            components: {
+                MuiTextField: {
+                    styleOverrides: {
+                        root: {
+                            "& .MuiInputBase-input:focus + fieldset": {
+                            borderColor: `#C4C4C4`,
+                            borderWidth: `1px`
+                            },
+                            "& .MuiInputBase-input:focus + label": {
+                                color: `#666666`
+                            }
+                        }
+                    }
+                }
+            },
         }),
         [mode],
     );
