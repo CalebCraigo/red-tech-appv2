@@ -34,16 +34,11 @@
     height: 23px !important;
 }
 
-/* .css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input:focus {
-    outline: 1px solid #E1E1E1 !important;
-        border-radius: 1px;
+.css-hrgw66-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
+    color: #666666 !important;
 }
 
-.css-hrgw66-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
-    color: #E1E1E1 !important;
-} */
-
-.css-h8w2yk-MuiInputBase-root-MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
-    border-color: #E1E1E1 !important;
-    border-width: 2px !important;
+.css-x6vx7i-MuiInputBase-root-MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: #C4C4C4 !important;
+    border-width: 1px !important;
 }

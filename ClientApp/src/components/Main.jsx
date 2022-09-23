@@ -68,12 +68,17 @@ const Main = () => {
                             "& .MuiInputBase-input:focus + fieldset": {
                             borderColor: `#C4C4C4`,
                             borderWidth: `1px`
-                            },
-                            "& .MuiInputBase-input:focus + label": {
-                                color: `#666666`
                             }
                         }
                     }
+                },
+                MuiInputBase:  {
+                    root: {
+                        "& .MuiInputBase-input:focus + fieldset": {
+                        borderColor: `#C4C4C4`,
+                        borderWidth: `1px`
+                        }
+                }
                 }
             },
         }),
