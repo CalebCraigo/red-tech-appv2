@@ -21,3 +21,8 @@
 .valueChip {
     height: 23px !important;
 }
+
+.css-k9yjdw-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: #C4C4C4 !important;
+    border-width: 1px !important;
+}
