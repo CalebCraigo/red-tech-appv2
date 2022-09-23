@@ -71,14 +71,6 @@ const Main = () => {
                             }
                         }
                     }
-                },
-                MuiInputBase:  {
-                    root: {
-                        "& .MuiInputBase-input:focus + fieldset": {
-                        borderColor: `#C4C4C4`,
-                        borderWidth: `1px`
-                        }
-                }
                 }
             },
         }),
