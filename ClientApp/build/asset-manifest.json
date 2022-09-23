@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.96f4d712.css",
+    "main.js": "/static/js/main.89215faf.js",
+    "static/js/787.a739b12c.chunk.js": "/static/js/787.a739b12c.chunk.js",
+    "service-worker.js": "/service-worker.js",
+    "static/media/redTechnologiesSquarelogo.png": "/static/media/redTechnologiesSquarelogo.ee34e8610f62e1b32f7a.png",
+    "index.html": "/index.html",
+    "main.96f4d712.css.map": "/static/css/main.96f4d712.css.map",
+    "main.89215faf.js.map": "/static/js/main.89215faf.js.map",
+    "787.a739b12c.chunk.js.map": "/static/js/787.a739b12c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.96f4d712.css",
+    "static/js/main.89215faf.js"
+  ]
+}
