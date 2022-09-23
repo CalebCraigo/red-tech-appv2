@@ -37,7 +37,9 @@
 .css-hrgw66-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
     color: #666666 !important;
 }
-
+.css-vivp4h-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
+    color: #C4C4C4 !important;
+}
 .css-x6vx7i-MuiInputBase-root-MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
     border-color: #C4C4C4 !important;
     border-width: 1px !important;
